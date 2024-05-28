@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DOMAIN=cartpole
-TASK=swingup
+DOMAIN=cheetah
+TASK=run
 
 SAVEDIR=./save
 

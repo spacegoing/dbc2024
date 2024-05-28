@@ -1,25 +1,28 @@
 name: dbc
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - python=3.6
+  - cudatoolkit=9.2
+  - pillow==6.1
   - pytorch
   - torchvision
-  - cudatoolkit=9.2
   - absl-py
   - pyparsing
+  - opencv
+  - scikit-image
+  - scikit-video
+  - tb-nightly
+  - tqdm
+  - imageio
+  - imageio-ffmpeg
+  - pygame
+  - networkx
+  - pip
   - pip:
     - termcolor
-    - git+git://github.com/deepmind/dm_control.git
-    - git+git://github.com/1nadequacy/dmc2gym.git
-    - opencv-python
-    - pillow==6.1
-    - scikit-image
-    - scikit-video
-    - tb-nightly
-    - tqdm
-    - imageio
-    - imageio-ffmpeg
-    - pygame
-    - networkx
     - dotmap
+    - mujoco<3.0
+    # - git+git://github.com/deepmind/dm_control.git
+    # - git+git://github.com/1nadequacy/dmc2gym.git
