@@ -329,7 +329,9 @@ def main():
 
     video = VideoRecorder(video_dir if args.save_video else None)
 
-    with open(os.path.join(args.work_dir, 'args.json'), 'w') as f:
+    fpath = os.path.join(args.work_dir, 'args.json')
+    os.makedirs(args.work_dir, exist_ok=True)
+    with open(fpath, 'w') as f:
         json.dump(vars(args), f, sort_keys=True, indent=4)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

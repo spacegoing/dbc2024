@@ -14,7 +14,7 @@ MUJOCO_GL="osmesa" LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/nvidia-opengl/:$LD_
     --encoder_type pixel \
     --decoder_type pixel \
     --img_source video \
-    --resource_files 'distractors/*.mp4' \
+    --resource_files 'kitrain/*.mp4' \
     --transition_model_type 'probabilistic' \
     --action_repeat 2 \
     --critic_tau 0.01 \

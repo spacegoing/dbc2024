@@ -26,3 +26,5 @@ dependencies:
     - mujoco<3.0
     # - git+git://github.com/deepmind/dm_control.git
     # - git+git://github.com/1nadequacy/dmc2gym.git
+# mamba install 'dm-control' 'mujoco<3.0' 'absl-py' 'pyparsing' 'opencv' 'scikit-image' 'scikit-video' 'tqdm' 'imageio' 'imageio-ffmpeg' 'pygame' 'networkx'
+# pip install termcolor dotmap

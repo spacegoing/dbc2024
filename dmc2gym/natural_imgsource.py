@@ -1,12 +1,14 @@
-
 # Copyright (c) Facebook, Inc. and its affiliates.
 # All rights reserved.
 #
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-import numpy as np
 import cv2
+import numpy
+numpy.float = numpy.float64
+numpy.int = numpy.int_
+np = numpy
 import skvideo.io
 import random
 import tqdm
